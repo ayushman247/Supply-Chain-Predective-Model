@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign in & Sign up Form</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}" />
-    <script src="{{ url_for('static', filename='script/app.js') }}"></script>
   </head>
   <body background="/static/images/main.jpg" height=100px width=100px>
     <main>
@@ -16,7 +15,7 @@
             <form action="{{ url_for('index') }}" autocomplete="off" class="sign-in-form">
               <div class="logo">
                 <img src="/static/images/logo.png" alt="easyclass" />
-                <h4>easyclass</h4>
+                <h4>POSSIMPIBLE</h4>
               </div>
 
               <div class="heading">
@@ -60,7 +59,7 @@
             <form action="/static/images/main.jpg" autocomplete="off" class="sign-up-form">
               <div class="logo">
                 <img src="/static/images/logo.png" alt="easyclass" />
-                <h4>easyclass</h4>
+                <h4>POSSIMPIBLE</h4>
               </div>
 
               <div class="heading">
@@ -139,7 +138,6 @@
         </div>
       </div>
     </main>
-
-    <!-- Javascript file -->
+    <script src="{{ url_for('static', filename='script/app.js') }}"></script>
   </body>
 </html>

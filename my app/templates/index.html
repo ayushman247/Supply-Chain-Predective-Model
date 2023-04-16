@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <!-- <script src="{{ url_for('static', filename='script/app.js') }}"></script> -->
     <script src="{{ url_for('static', filename='script/scroll.js') }}"></script>
+    <script src="{{ url_for('static', filename='script/app.js') }}"></script>
     <title>Possimpible</title>
 </head>
 <body>
@@ -56,7 +57,14 @@
             </div>
             <div class="type review">
                 <p>USER GUIDE</p>
-                <img src="/static/images/juice.jpg" alt="juiceJPG">
+                <img src="/static/images/juice.jpg" onclick="redirectToApp()">
+
+                    <!-- JavaScript function that redirects to app.py -->
+                    <script>
+                    function redirectToApp() {
+                        window.location.href = "http://127.0.0.1:7860";
+                    }
+                    </script>
             </div>
             <div class="type photography">
                 <p>ACKNOWLEDGEMENTS</p>
