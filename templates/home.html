@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <!-- Starts form section -->
+    <div class="fullform">
+    <div class="form-container ">
+      <b>
+        <form class="form-horizontal" action = "/predict/" method="post">
+        
+          <!-- <div class="form-group row">
+            <label class="control-label col-sm-2" for="temperature">Status:</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="temperature1" name="temperature1">
+            </div>
+          </div> -->
+
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="temperature">Temperature (deg C):</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="temperature" name="temperature">
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="fuel_price">Outlet Size:</label>
+              <div class="col-sm-4">          
+                <input type="text" class="form-control" id="fuel_price" name="fuel_price">
+              </div>
+            </div>
+
+            
+            <div class="form-group row">
+              <label class="control-label col-sm-2" for="cpi">Item Weight (kg):</label>
+              <div class="col-sm-4">          
+                <input type="text" class="form-control" id="cpi" name="cpi">
+              </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="control-label col-sm-2" for="unemployment">Quantity:</label>
+                <div class="col-sm-4">          
+                  <input type="text" class="form-control" id="unemployment" name="unemployment">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="control-label col-sm-2" for="size">Price (Rs):</label>
+                <div class="col-sm-4">          
+                  <input type="text" class="form-control" id="size" name="size">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="control-label col-sm-2" for="holiday">CPI:</label>
+                <div class="col-sm-4">          
+                  <input type="text" class="form-control" id="holiday" name="holiday">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="control-label col-sm-2" for="type_b">Outlet Location:</label>
+                <div class="col-sm-4">          
+                  <input type="text" class="form-control" id="type_b" name="type_b">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="control-label col-sm-2" for="type_c">Return (kg):</label>
+                <div class="col-sm-4">          
+                  <input type="text" class="form-control" id="type_c" name="type_c">
+                </div>
+              </div>
+
+            
+            <div class="form-group row"> 
+            <label class="control-label col-sm-2" for="">&nbsp;</label>                
+              <div class="col-sm-offset-2 col-sm-4">
+                <button type="submit" class="btn btn-primary">Predict</button>
+              </div>
+            </div>
+          </form>
+        <!-- Ends form section -->
+        
+      </b>
+    </div>
+  </div>
+
+{% endblock %}

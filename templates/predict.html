@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="row justify-content-md-center mb-4">
+    <script>
+        function setData() {
+        const txt = `The total amount spent will be {{prediction[0]}} Rs and the amount of food wasted will be {{(prediction[0]*2)/1800000}} kgs. If we reduce the item weight by {{prediction[0]/290000}} kgs, then the food will be wasted by less than 5%.`;
+        const outputDiv = document.getElementById('typed-content');
+        return [txt, outputDiv]
+        };
+        function typeText() {
+        const res =  setData();
+        const txt = res[0];
+        const outputDiv = res[1];
+        let i = 0;
+        const timerId = setInterval(() => {
+        outputDiv.innerHTML += txt.charAt(i);
+        i++;
+        if (i === txt.length) {
+        clearInterval(timerId);
+        }
+        },50);
+        }
+        typeText(); // call the function when the page loads
+    </script>
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    #typed-content {
+      font-size: 40px;
+    }
+  </style>
+   <title>Document</title>
+</head>
+<body>
+
+<style type="text/css"> body, div, input { margin: 2rem; } </style>
+
+<div>
+<div id="typed-content"></div>
+</div>
+
+<h1>
+<script>
+function setData() {
+const txt = `The total amount spent will be {{prediction[0]}} Rs and the amount of food wasted will be {{(prediction[0]*2)/1800000}} kgs. If we reduce the item weight by {{prediction[0]/290000}} kgs, then the food will be wasted by less than 5%.`;
+const outputDiv = document.getElementById('typed-content');
+return [txt, outputDiv]
+};
+function typeText() {
+const res =  setData();
+const txt = res[0];
+const outputDiv = res[1];
+let i = 0;
+const timerId = setInterval(() => {
+outputDiv.innerHTML += txt.charAt(i);
+i++;
+if (i === txt.length) {
+clearInterval(timerId);
+}
+},50);
+}
+typeText(); // call the function when the page loads
+</script>
+</h1>
+</body>
+</html>
+{% endblock %}

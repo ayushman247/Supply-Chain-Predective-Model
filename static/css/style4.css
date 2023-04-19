@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  background-image: url("/static/images/achnowledgement.jpeg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  opacity: 0.8; 
+}
+
+.head{
+   /* background-color: aqua; */
+    display: inline-block;
+justify-content: center;
+margin-top: 50px;
+margin-left: 630px;
+}
+
+section{
+    font-size: 24px;
+    padding: 40px;
+    border-radius: 10px;
+    color: black;
+    display: inline-block;
+    background-color: aliceblue;
+    opacity: 0,4;
+    text-align: center;
+    margin-top: 280px;
+    margin-left: 30px;
+    margin-right: 30px;
+    /* margin-left: 200px; */
+}
